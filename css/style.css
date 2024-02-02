@@ -1,0 +1,2249 @@
+@font-face {
+  font-family: "Grenette Pro";
+  src: url("../fonts/GrenettePro-Bold.eot");
+  src: url("../fonts/GrenettePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GrenettePro-Bold.woff2") format("woff2"), url("../fonts/GrenettePro-Bold.woff") format("woff"), url("../fonts/GrenettePro-Bold.ttf") format("truetype"), url("../fonts/GrenettePro-Bold.svg#GrenettePro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grenette Pro";
+  src: url("../fonts/GrenettePro-Light.eot");
+  src: url("../fonts/GrenettePro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GrenettePro-Light.woff2") format("woff2"), url("../fonts/GrenettePro-Light.woff") format("woff"), url("../fonts/GrenettePro-Light.ttf") format("truetype"), url("../fonts/GrenettePro-Light.svg#GrenettePro-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grenette Pro";
+  src: url("../fonts/GrenettePro-Regular.eot");
+  src: url("../fonts/GrenettePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GrenettePro-Regular.woff2") format("woff2"), url("../fonts/GrenettePro-Regular.woff") format("woff"), url("../fonts/GrenettePro-Regular.ttf") format("truetype"), url("../fonts/GrenettePro-Regular.svg#GrenettePro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT Walsheim";
+  src: url("../fonts/GTWalsheimRegular.eot");
+  src: url("../fonts/GTWalsheimRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GTWalsheimRegular.woff2") format("woff2"), url("../fonts/GTWalsheimRegular.woff") format("woff"), url("../fonts/GTWalsheimRegular.ttf") format("truetype"), url("../fonts/GTWalsheimRegular.svg#GTWalsheimRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("../fonts/GTWalsheimPro-Bold.eot");
+  src: url("../fonts/GTWalsheimPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GTWalsheimPro-Bold.woff2") format("woff2"), url("../fonts/GTWalsheimPro-Bold.woff") format("woff"), url("../fonts/GTWalsheimPro-Bold.ttf") format("truetype"), url("../fonts/GTWalsheimPro-Bold.svg#GTWalsheimPro-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: url("../fonts/GTWalsheimPro-Light.eot");
+  src: url("../fonts/GTWalsheimPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GTWalsheimPro-Light.woff2") format("woff2"), url("../fonts/GTWalsheimPro-Light.woff") format("woff"), url("../fonts/GTWalsheimPro-Light.ttf") format("truetype"), url("../fonts/GTWalsheimPro-Light.svg#GTWalsheimPro-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  font-family: "Grenette Pro";
+}
+
+body.scroll {
+  overflow-y: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  border: none;
+  -moz-appearance: textfield;
+}
+
+input[type=number]:focus {
+  outline: none;
+}
+
+input[type=tel] {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type=text] {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[type=tel]:focus {
+  outline: none;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+select {
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px;
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 24px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 0px 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+    padding: 0px;
+  }
+}
+.osnova {
+  position: relative;
+  transition: 1s ease-out;
+  -webkit-transition: 1s ease-out;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+.header {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 2;
+}
+.header_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header_block_logo img {
+  width: 144px;
+}
+.header_block_info_social {
+  display: none;
+}
+.header_block_info_lang {
+  display: none;
+}
+.header_block_info_btn {
+  cursor: pointer;
+}
+.header .fix {
+  display: none;
+}
+.header.fixed {
+  background-color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.header.fixed .def {
+  display: none;
+}
+.header.fixed .fix {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header_block_logo img {
+    width: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 15px 0px;
+  }
+  .header_block_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_block_info_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header_block_info_social a {
+    margin-left: 30px;
+  }
+  .header_block_info_lang {
+    display: block;
+    color: #5C3F2D;
+    font-family: "GT Walsheim";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin-left: 63px;
+  }
+  .header_block_info_lang a {
+    color: #5C3F2D;
+  }
+  .header_block_info_lang span {
+    color: #5C3F2D;
+    font-family: "GT Walsheim Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 15.4px */
+  }
+  .header_block_info_btn {
+    margin-left: 63px;
+  }
+}
+
+@-webkit-keyframes slideme {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0%;
+    left: 90%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+
+@keyframes slideme {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  50% {
+    top: 0%;
+    left: 90%;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+  }
+}
+.main {
+  height: 100vh;
+  background: rgba(217, 217, 217, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.main_title {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.main_title_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-y: hidden;
+}
+.main_title_item span {
+  color: #5C3F2D;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 144px */
+  letter-spacing: -2.4px;
+  display: block;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+.main_title_item:first-child {
+  padding-left: 20px;
+}
+.main_title_item:nth-child(2) {
+  padding-left: 220px;
+}
+.main_mob_item {
+  height: 56px;
+  overflow-y: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main_mob_item span {
+  display: block;
+  color: #5B3F2D;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 55.2px */
+  letter-spacing: -0.92px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+.main_mob_item:nth-child(2) {
+  padding-left: 80px;
+}
+.main_mob_item:nth-child(4) {
+  padding-left: 70px;
+}
+.main_mob_item:last-child {
+  padding-left: 104px;
+}
+.main_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 100px;
+  height: 14px;
+}
+.main_btn img {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+.main_feature {
+  width: 247px;
+  height: 721px;
+  border-radius: 721.043px;
+  background: #5C3F2D;
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  -webkit-animation: slideme 15s linear infinite;
+          animation: slideme 15s linear infinite;
+}
+.main.animation .main_mob_item span {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+.main.animation .main_btn img {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+@media (min-width: 768px) {
+  .main_mob {
+    display: none;
+  }
+  .main_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main_title_item {
+    height: auto;
+  }
+  .main_title_item span {
+    font-size: 75px;
+    -webkit-transform: translateY(90px);
+            transform: translateY(90px);
+  }
+  .main.animation .main_title_item span {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition: all 0.6s linear;
+    transition: all 0.6s linear;
+  }
+}
+@media (min-width: 1200px) {
+  .main_feature {
+    width: 997px;
+    height: 997px;
+    border-radius: 50%;
+    background: #5C3F2D;
+    -webkit-filter: blur(300px);
+            filter: blur(300px);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    -webkit-animation: slideme 15s linear infinite;
+            animation: slideme 15s linear infinite;
+  }
+  .main_title_item span {
+    font-size: 120px;
+    -webkit-transform: translateY(130px);
+            transform: translateY(130px);
+  }
+}
+
+.video {
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video .fp-overflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.video .container {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0px;
+}
+.video_slider {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 32px;
+}
+.video_slider_item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 5px;
+}
+.video_slider_item span {
+  color: #FFF;
+  font-family: "GT Walsheim Pro";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px; /* 38px */
+  letter-spacing: -0.76px;
+}
+.video_slider_item p {
+  color: #FFF;
+  font-family: "GT Walsheim";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
+  margin-left: 5px;
+}
+.video_slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+.video_slider .slick-dots li {
+  width: 5px;
+  height: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+  margin-left: 12px;
+}
+.video_slider .slick-dots li.slick-active {
+  background-color: white;
+}
+.video_slider .slick-dots li button {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .video_slider {
+    padding-bottom: 80px;
+  }
+  .video_slider_item span {
+    font-size: 90px;
+    line-height: 78px; /* 90px */
+  }
+  .video_slider_item p {
+    font-size: 38px;
+    line-height: 98%; /* 37.24px */
+    margin-left: 28px;
+  }
+  .video_slider .slick-dots {
+    top: 32px;
+  }
+  .video_slider .slick-dots li {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .video_slider .slick-dots li {
+    margin-left: 42px;
+  }
+}
+
+.about {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 32px;
+}
+.about_text h2 {
+  color: #5B3F2D;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 40.8px */
+  letter-spacing: -0.68px;
+}
+.about_text p {
+  color: #5B3F2D;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin-top: 18px;
+}
+.about_img {
+  margin-top: 18px;
+}
+.about_img img {
+  width: 100%;
+}
+.about_img p {
+  color: #5B3F2D;
+  font-family: "GT Walsheim";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+  margin-top: 18px;
+}
+@media (min-width: 1024px) {
+  .about {
+    padding-top: 50px;
+  }
+  .about_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about_text h2 {
+    font-size: 48px;
+    line-height: 120%;
+    white-space: nowrap;
+  }
+  .about_text p {
+    font-size: 32px;
+    line-height: 120%; /* 38.4px */
+    margin-left: 80px;
+    margin-top: 0px;
+  }
+  .about_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 50px;
+  }
+  .about_img img {
+    width: 464px;
+  }
+  .about_img p {
+    font-size: 18px;
+    line-height: 110%;
+    margin-top: 0px;
+    margin-left: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about_img {
+    margin-top: 60px;
+  }
+  .about_img p {
+    margin-left: 116px;
+  }
+}
+@media (min-width: 1600px) {
+  .about_img {
+    margin-top: 120px;
+  }
+}
+
+.moderation {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.moderation_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.moderation_text h2 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  color: #5B3F2D;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 40.8px */
+  letter-spacing: -0.68px;
+}
+.moderation_text p {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  color: #5B3F2D;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin-top: 8px;
+}
+.moderation_video {
+  margin-top: 18px;
+}
+.moderation_video video {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .moderation {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .moderation_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .moderation_text p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .moderation_text h2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 44px;
+    line-height: 120%; /* 52.8px */
+    margin-left: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .moderation {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .moderation .fp-overflow {
+    padding-top: 100px;
+  }
+  .moderation_text p {
+    font-size: 26px;
+  }
+  .moderation_text h2 {
+    margin-left: 100px;
+  }
+  .moderation_video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 25px;
+  }
+  .moderation_video video {
+    width: 836px;
+  }
+}
+@media (min-width: 1600px) {
+  .moderation_text p {
+    font-size: 32px;
+  }
+  .moderation_video video {
+    width: 1036px;
+  }
+}
+
+.relentlessly {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgba(217, 217, 217, 0.6);
+  padding: 45px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.relentlessly_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.relentlessly_block_mob {
+  width: 100%;
+}
+.relentlessly_block_mob_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.relentlessly_block_mob_item span {
+  color: #5B3F2D;
+  font-family: "Grenette Pro";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 55.2px */
+  letter-spacing: -0.92px;
+}
+.relentlessly_block_mob_item:nth-child(2) {
+  padding-left: 80px;
+}
+.relentlessly_block_mob_item:nth-child(4) {
+  padding-left: 140px;
+}
+.relentlessly_block_title {
+  display: none;
+}
+.relentlessly_block_wrap {
+  margin-top: 25px;
+}
+.relentlessly_block_wrap p {
+  color: #5B3F2D;
+  font-family: "GT Walsheim";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+}
+.relentlessly_block_wrap_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+.relentlessly_block_wrap_links a {
+  margin-top: 10px;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  color: #5B3F2D;
+  text-align: center;
+  font-family: "GT Walsheim";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  border: 1px solid #5B3F2D;
+  background: rgba(217, 217, 217, 0);
+}
+.relentlessly_btn {
+  margin-top: 45px;
+}
+@media (min-width: 768px) {
+  .relentlessly_block_mob {
+    display: none;
+  }
+  .relentlessly_block_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .relentlessly_block_title_item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .relentlessly_block_title_item span {
+    color: #5B3F2D;
+    font-weight: 300;
+    letter-spacing: -2.4px;
+    font-size: 70px;
+    line-height: 120%; /* 144px */
+  }
+  .relentlessly_block_title_item:nth-child(2) {
+    padding-left: 140px;
+  }
+  .relentlessly_block_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    margin-top: 50px;
+  }
+  .relentlessly_block_wrap p {
+    width: calc(50% - 50px);
+  }
+  .relentlessly_block_wrap_links {
+    width: calc(50% - 50px);
+    margin-top: 0px;
+  }
+  .relentlessly_block_wrap_links a:first-child {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .relentlessly_block_title_item span {
+    font-size: 100px;
+  }
+  .relentlessly_block_title_item:nth-child(2) {
+    padding-left: 200px;
+  }
+  .relentlessly_block_wrap p {
+    font-size: 18px;
+  }
+  .relentlessly_block_wrap_links a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .relentlessly {
+    height: 100vh;
+    padding: 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .relentlessly_block_wrap {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .relentlessly_block_wrap p {
+    width: 368px;
+  }
+  .relentlessly_block_wrap_links {
+    width: 368px;
+    margin-left: 20px;
+  }
+  .relentlessly_btn {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .relentlessly_block_title_item span {
+    font-size: 120px;
+    line-height: 120%; /* 144px */
+  }
+}
+
+.media {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+.media h2 {
+  color: #5B3F2D;
+  font-family: "GT Walsheim";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 34px */
+  letter-spacing: -0.68px;
+}
+.media_block_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.media_block_left_img {
+  margin: 18px 0px;
+  width: 100%;
+}
+.media_block_left_img img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.media_block_left h3 {
+  color: #5B3F2D;
+  font-family: "Grenette Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+.media_block_left p {
+  color: #5B3F2D;
+  font-family: "GT Walsheim";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 15.6px */
+  margin-top: 8px;
+}
+.media_block_left a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #5B3F2D;
+  height: 26px;
+  line-height: 26px;
+  padding: 0px 22px;
+  color: #5B3F2D;
+  text-align: center;
+  font-family: "GT Walsheim";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 25px;
+  text-decoration: none;
+}
+.media_block_right_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 25px;
+}
+.media_block_right_item_img {
+  width: 100%;
+}
+.media_block_right_item_img img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.media_block_right_item h3 {
+  color: #5B3F2D;
+  font-family: "Grenette Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin: 18px 0px;
+}
+.media_block_right_item a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #5B3F2D;
+  height: 26px;
+  line-height: 26px;
+  padding: 0px 22px;
+  color: #5B3F2D;
+  text-align: center;
+  font-family: "GT Walsheim";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+.media .fp-overflow {
+  padding: 70px 0px 30px 0px;
+}
+@media (min-width: 768px) {
+  .media_block_left_img img {
+    height: 370px;
+  }
+  .media_block_right_item_img img {
+    height: 270px;
+  }
+}
+@media (min-width: 1024px) {
+  .media h2 {
+    font-size: 70px;
+    line-height: 100%;
+  }
+  .media_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    margin-top: 60px;
+  }
+  .media_block_left {
+    width: calc(100% - 368px);
+  }
+  .media_block_left_img {
+    margin-top: 0px;
+  }
+  .media_block_left h3 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .media_block_left p {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .media_block_left a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .media_block_right {
+    width: 268px;
+  }
+  .media_block_right_item:first-child {
+    margin-top: 0px;
+  }
+  .media_block_right_item h3 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .media_block_right_item a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .media {
+    padding: 0px 0px;
+  }
+  .media .fp-overflow {
+    padding: 100px 0px 30px 0px;
+  }
+  .media h2 {
+    font-size: 88px;
+  }
+  .media_block {
+    margin-top: 64px;
+  }
+  .media_block_left {
+    width: calc(100% - 476px);
+  }
+  .media_block_left_img {
+    overflow: hidden;
+  }
+  .media_block_left_img img {
+    height: 558px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .media_block_left_img:hover img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .media_block_left h3 {
+    margin-top: 60px;
+  }
+  .media_block_left p {
+    margin-top: 30px;
+  }
+  .media_block_left a {
+    margin-top: 40px;
+  }
+  .media_block_left:hover .media_block_left_img img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .media_block_right {
+    width: 368px;
+  }
+  .media_block_right_item {
+    margin-top: 50px;
+  }
+  .media_block_right_item_img {
+    overflow: hidden;
+  }
+  .media_block_right_item_img img {
+    height: 234px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .media_block_right_item h3 {
+    font-size: 32px;
+    line-height: 120%;
+    margin: 20px 0px;
+  }
+  .media_block_right_item:hover .media_block_right_item_img img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+}
+
+.podcast {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #948F73;
+  padding: 50px 0px;
+}
+.podcast_text h2 {
+  color: #F8F2E2;
+  font-family: "GT Walsheim";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 34px */
+  letter-spacing: -0.68px;
+}
+.podcast_text_right {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.podcast_text_right p {
+  color: #F8F2E2;
+  font-family: "GT Walsheim";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+}
+.podcast_text_right a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #F8F2E2;
+  padding: 0px 22px;
+  height: 26px;
+  color: #F8F2E2;
+  text-align: center;
+  font-family: "GT Walsheim";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 18px;
+}
+.podcast_items {
+  position: relative;
+  width: 100%;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  margin-top: 25px;
+}
+.podcast_items::-webkit-scrollbar {
+  display: none;
+}
+.podcast_items.active {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.podcast_items_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 268px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 24px;
+  position: relative;
+  background: #F5EFDF;
+  margin-right: 24px;
+}
+.podcast_items_item:last-child {
+  margin-right: 0px;
+}
+.podcast_items_item_img {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.podcast_items_item_img img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.podcast_items_item span {
+  color: #A59C6B;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 17.346px */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.podcast_items_item h3 {
+  color: #A59C6B;
+  font-family: "Grenette Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 23.128px */
+  margin-top: 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.podcast_items_item p {
+  color: #A59C6B;
+  font-family: "GT Walsheim";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 10.6px */
+  margin-top: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.podcast_items_item a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ADA785;
+  background: rgba(217, 217, 217, 0);
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  color: #A59C6B;
+  text-align: center;
+  font-family: "GT Walsheim";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0px 12px;
+  margin-top: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+@media (min-width: 1024px) {
+  .podcast_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .podcast_text h2 {
+    font-size: 70px;
+    line-height: 100%;
+  }
+  .podcast_text_right {
+    margin-top: 0px;
+    width: 326px;
+  }
+  .podcast_text_right p {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .podcast_text_right a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .podcast_items_item {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item_img img {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item span {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item h3 {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item p {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item a {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item:hover {
+    background: #A9A06C;
+  }
+  .podcast_items_item:hover .podcast_items_item_img img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item:hover span {
+    color: #F8F2E2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item:hover h3 {
+    color: #F8F2E2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item:hover p {
+    color: #F8F2E2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .podcast_items_item:hover a {
+    border-color: #F8F2E2;
+    color: #F8F2E2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+}
+@media (min-width: 1200px) {
+  .podcast {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+  }
+  .podcast .fp-overflow {
+    padding-top: 100px;
+  }
+  .podcast_text h2 {
+    font-size: 90px;
+    line-height: 100%;
+  }
+  .podcast_items {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .podcast_items {
+    margin-top: 120px;
+  }
+}
+
+.item {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: tomato;
+  width: 50%;
+  height: 130px;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 130px;
+}
+
+.partners {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  background: #5C3F2D;
+  padding: 50px 0px;
+}
+.partners_title h2 {
+  color: #F8F2E2;
+  font-family: "GT Walsheim";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 34px */
+  letter-spacing: -0.68px;
+}
+.partners_title_right {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.partners_title_right p {
+  color: #F8F2E2;
+  font-family: "GT Walsheim";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 17.6px */
+}
+.partners_title_right a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #F8F2E2;
+  padding: 0px 22px;
+  height: 26px;
+  color: #F8F2E2;
+  text-align: center;
+  font-family: "GT Walsheim";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 18px;
+}
+.partners_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.partners_list_item {
+  width: 50%;
+  position: relative;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.partners_list_item .hover {
+  display: none;
+}
+.partners_list_item img {
+  max-width: 80%;
+}
+@media (min-width: 768px) {
+  .partners_list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .partners_list_item {
+    width: 33.3333333333%;
+  }
+}
+@media (min-width: 1024px) {
+  .partners_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .partners_title h2 {
+    font-size: 70px;
+    line-height: 100%;
+  }
+  .partners_title_right {
+    margin-top: 0px;
+    width: 326px;
+  }
+  .partners_title_right p {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .partners_title_right a {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .partners_list_item {
+    position: relative;
+    height: 100px;
+  }
+  .partners_list_item_bg {
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .partners_list_item img {
+    width: auto;
+    max-width: none;
+  }
+  .partners_list_item:hover .partners_list_item_bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .partners_list_item:hover .default {
+    display: none;
+  }
+  .partners_list_item:hover .hover {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .partners {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+  }
+  .partners_title h2 {
+    font-size: 90px;
+    line-height: 100%;
+  }
+  .partners_list {
+    margin: 60px -60px 0px -60px;
+  }
+  .partners_list_item {
+    width: 25%;
+    margin-top: 70px;
+  }
+}
+@media (min-width: 1600px) {
+  .partners_list {
+    margin: 120px -60px 0px -60px;
+  }
+}
+
+.portal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  background: #D9D9D9;
+  padding: 50px 0px;
+}
+.portal h2 {
+  color: #5B3F2D;
+  font-family: "Grenette Pro";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 40.8px */
+  letter-spacing: -0.68px;
+}
+.portal_block_video {
+  margin-top: 18px;
+}
+.portal_block_video video {
+  width: 100%;
+}
+.portal_block_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.portal_block_text ul {
+  margin-top: 18px;
+}
+.portal_block_text ul li {
+  color: #5B3F2D;
+  font-family: "GT Walsheim";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 16px;
+}
+.portal_block_text ul li::after {
+  content: "";
+  background-color: #5B3F2D;
+  width: 3px;
+  height: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.portal_block_text a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 26px;
+  padding: 0px 22px;
+  border: 1px solid #5B3F2D;
+  color: #5B3F2D;
+  text-align: center;
+  font-family: "GT Walsheim";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 15.6px */
+  margin-top: 18px;
+}
+@media (min-width: 1024px) {
+  .portal h2 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .portal_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portal_block_text {
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .portal {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+  }
+  .portal_block {
+    margin-top: 60px;
+  }
+}
+
+.footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #A59C6B;
+  position: relative;
+}
+.footer .fp-overflow {
+  padding: 80px 0px 24px 0px;
+}
+.footer_block_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_block_left img {
+  width: 140px;
+}
+.footer_block_left p {
+  display: none;
+}
+.footer_block_mid {
+  margin-top: 25px;
+}
+.footer_block_mid_soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_block_mid_soc span {
+  color: #FFF;
+  font-family: "Grenette Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer_block_mid_soc ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 18px;
+}
+.footer_block_mid_soc ul li {
+  margin-left: 25px;
+}
+.footer_block_mid_soc ul li:first-child {
+  margin-left: 0px;
+}
+.footer_block_mid p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Grenette Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 24px 0px;
+}
+.footer_block_mid_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_block_mid_form span {
+  color: #FFF;
+  font-family: "Grenette Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer_block_mid_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_block_mid_form form .input_text {
+  height: 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 38px;
+  padding: 0px 10px;
+  color: #5B3F2D;
+  font-family: "GT Walsheim";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  background: #FFF;
+  margin-top: 18px;
+  width: 100%;
+}
+.footer_block_mid_form form label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  color: #FFF;
+  font-family: "GT Walsheim";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 16.5px */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 24px;
+}
+.footer_block_mid_form form label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.footer_block_mid_form form label .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #FFF;
+}
+.footer_block_mid_form form label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 1px;
+  width: 3px;
+  height: 7px;
+  border: solid #A59C6B;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.footer_block_mid_form form label input:checked ~ .checkmark:after {
+  display: block;
+}
+.footer_block_mid_form form input[type=submit] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 42px;
+  padding: 0px 30px;
+  line-height: 42px;
+  border-radius: 30px;
+  background: #5B3F2D;
+  color: #FFF;
+  font-family: "GT Walsheim Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 17.6px */
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 24px;
+}
+.footer_block_contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+}
+.footer_block_contact span {
+  color: #FFF;
+  text-align: center;
+  font-family: "Grenette Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer_block_contact p {
+  color: #FFF;
+  text-align: center;
+  font-family: "Grenette Pro";
+  font-size: 16.134px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 18px;
+}
+@media (min-width: 1024px) {
+  .footer_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+  .footer_block_left {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 250px;
+  }
+  .footer_block_left p {
+    display: block;
+    color: #FFF;
+    font-family: "Grenette Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+  }
+  .footer_block_mid {
+    margin-top: 0px;
+    width: 300px;
+  }
+  .footer_block_mid_soc {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer_block_mid p {
+    text-align: left;
+    display: none;
+  }
+  .footer_block_mid_form {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 30px;
+  }
+  .footer_block_mid_form form {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer_block_contact {
+    margin-top: 0px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 250px;
+  }
+  .footer_block_contact p {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding: 0px;
+    height: 570px;
+  }
+  .footer .fp-overflow {
+    padding: 0px;
+  }
+  .footer_block_left {
+    width: 292px;
+  }
+  .footer_block_left img {
+    width: auto;
+  }
+  .footer_block_mid_form {
+    margin-top: 65px;
+  }
+}
