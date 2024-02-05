@@ -458,8 +458,8 @@ input:focus {
   left: 0px;
   top: 0px;
   z-index: -1;
-  -webkit-animation: slideme 15s linear infinite;
-          animation: slideme 15s linear infinite;
+  -webkit-animation: slideme 10s linear infinite;
+          animation: slideme 10s linear infinite;
 }
 .main.animation .main_mob_item span {
   -webkit-transform: translateY(0px);
@@ -1276,7 +1276,7 @@ input:focus {
     padding: 0px 0px;
   }
   .media .fp-overflow {
-    padding: 100px 0px 30px 0px;
+    padding: 100px 0px 60px 0px;
   }
   .media h2 {
     font-size: 88px;
@@ -1766,7 +1766,7 @@ input:focus {
   }
   .partners_list_item {
     position: relative;
-    height: 100px;
+    height: 106px;
   }
   .partners_list_item_bg {
     background-color: #fff;
